@@ -16,26 +16,34 @@ class Header extends React.Component {
 
   render() {
     return (
+      <>
     <div className="Navbar">
-      <div className="Navbar__Link Navbar__Link-brand">
+      <div className="Navbar-brand">
         ghosthugs
       </div>
-      <div className="Navbar__Link-toggle">
+      <div className="Navbar-toggle">
         <button onClick={this.toggleMenu}>&#9776;</button>
       </div>
-      {this.state.showMenu ?
-      <nav className="Navbar__Items">
-        <div className="Navbar__Link">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="Navbar__Link">
-          <Link to="/projects">Projects</Link>
-        </div>
-        <div className="Navbar__Link">
-          <Link to="/about">About</Link>
-        </div>
-      </nav> : ''}
     </div>
+    {
+      this.state.showMenu ?
+      <div className="Menu">
+        <div className="Menu-naviagtion">
+          <button onClick={this.toggleMenu}>&times;</button>
+          <div className="Menu-items">
+          <div className="Menu-link">
+            <Link to="/">Home</Link>
+          </div>
+          <div className="Menu-link">
+            <Link to="/projects">Projects</Link>
+          </div>
+          <div className="Menu-link">
+            <Link to="/about">About</Link>
+          </div>
+        </div></div>
+      </div> : ''
+    }
+    </>
   )}
 } 
 

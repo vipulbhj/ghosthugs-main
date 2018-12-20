@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './header';
-import Footer from './footer';
 
 import './layout.css';
-import './custom.css';
+import './header-footer.css';
 
 const Layout = ({ children }) => (
-  <>
   <div className="layout-container">
-    <Header />
-    <div className="main-content">
+    <header className="header">
+      <Header />
+    </header>
+    <main className="user-content">
       {children}
-    </div>
+    </main>
+    <footer className="footer">
+      <p>Made with love by ghosthugs</p>  
+    </footer>
   </div>
-  <Footer />
-  </>
 )
 
 Layout.propTypes = {

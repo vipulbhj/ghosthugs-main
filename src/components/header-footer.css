@@ -1,0 +1,97 @@
+.Navbar {
+    background-color: #0b0c10;
+    display: flex;
+    padding: 8px; 
+    line-height: 1.5;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar-brand {
+    color: #66fcf1;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Navbar-toggle button {
+    border: none;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 1.5em;
+    color: #66fcf1; 
+    cursor: pointer;
+} 
+
+.Menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: transparent; 
+}
+
+.Menu-naviagtion {
+    width: 70%;
+    margin: 0px 0px 0px auto;
+    padding: 5px 20px;
+    background-color: #1f2833;
+    border-radius: 4px;
+    height: 98.5%;
+}
+
+.Menu-naviagtion button {
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 4em;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    letter-spacing: 2px;
+    font-family: monospace;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.Menu-naviagtion .Menu-items {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.Menu-naviagtion .Menu-items .Menu-link {
+    font-size: 1.7em;
+    line-height: 2;
+}
+
+.Menu-naviagtion .Menu-items .Menu-link a {
+    text-decoration: none;
+    color: #45a29e;
+    font-family: Tahoma;
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #0b0c10;
+    text-align: center;
+    padding: 10px;
+    color: #45a29e;
+}
+ 
+.footer p {
+    margin: 0px;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
+    font-family: 'Courier New', Courier, monospace;
+}
