@@ -1,11 +1,13 @@
 .home-page {
     display: grid;
-    grid-template-rows: 250px 600px 300px;
+    grid-template-rows: 250px 600px 600px 300px;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
     grid-template-areas: 
                     "ms ms ms ms"
                     "info info info info"
-                    "ss ss . ."
+                    "ss ss ss ss"
+                    "minfo minfo minfo minfo"
 }
 
 .home-main-slider {
@@ -60,8 +62,8 @@
 }
 
 .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
 }
 
 .slides::-webkit-scrollbar-thumb {
@@ -87,6 +89,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px 5px 0px 5px;
 }
 
 .slides > div:target {
@@ -113,13 +116,43 @@
 
 
 .home-meta-info {
-    background-color: green;
     grid-area: minfo;
+    font-size: 1.5em;
+    padding: 30px;
 }
+
+.previous-work-showcase {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.previous-work-showcase > div {
+    background-color: yellowgreen;
+}
+
 .home-second-slider { 
-    background-color: blue;
     grid-area: ss;
+    background-size: cover;
+    background-position: left center;
 }
+
+.home-second-slider article {
+    width: 60%;
+    word-wrap: break-word;
+    border: 1px solid #F44336;
+    padding: 20px;
+    margin: 155px 0px 0px auto;
+    letter-spacing: 1.5px;
+}
+
+.home-second-slider article p {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
 
 
 @media only screen and (min-width: 600px) {
@@ -128,6 +161,29 @@
 
 @media only screen and (min-width: 768px) {
 /* For desktop: */
+    .home-page {
+        grid-template-rows: 250px 600px 600px;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 20px;
+        grid-template-areas: 
+                        "ms ms ms ms ms ms"
+                        "info info info minfo minfo minfo"
+                        "ss ss ss ss ss ss" 
+    }
+
+    .home-second-slider { 
+        grid-area: ss;
+        background-size: cover;
+        background-position: left center;
+        background-position-y: 60%; 
+    }
+
+    .slides > div {
+        width: 70%;
+        height: 500px;
+        margin: 0px 5px 0px 5px;
+    }
+    
     .home-main-slider h2 {
         font-size: 4em;
     }
@@ -136,4 +192,32 @@
         font-size: 2em;
     }
 
+
+    .home-second-slider article {
+        width: 60%;
+        word-wrap: break-word;
+        border: 1px solid #F44336;
+        padding: 20px;
+        margin: 120px auto;
+    }
+    
+    .home-second-slider article p {
+        font-size: 3em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+    }
+    
+    .home-meta-info h3 {
+        font-size: 1.5em;
+        font-family: monospace;
+        letter-spacing: 5px
+    }
+
+    .previous-work-showcase {
+        display: grid;
+        grid-template-rows: 200px 200px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
 }

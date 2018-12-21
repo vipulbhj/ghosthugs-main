@@ -7,6 +7,7 @@ import CARD from '../components/card';
 import ai from '../images/ai.png';
 import app from '../images/app.jpg';
 import analytics from '../images/analytics.png';
+import cover from '../images/cover.jpg';
 
 
 const IndexPage = () => (
@@ -29,8 +30,22 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <aside className="home-meta-info"></aside>
-      <div className="home-second-slider"></div>
+      <aside className="home-meta-info">
+        <h3 style={{marginBottom: '30px'}}>Why us</h3>
+        <div className="previous-work-showcase">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </aside>
+      <div className="home-second-slider" style={{
+        backgroundImage: `url('${cover}')`
+      }}>
+        <article>
+          <p>perfection is achieved not when there is nothing to add but when there is nothing to take away</p>
+        </article>
+      </div>
     </div>
   </Layout>
   </>
