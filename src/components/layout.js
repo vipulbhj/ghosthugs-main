@@ -4,6 +4,7 @@ import Header from './header';
 
 import './layout.css';
 import './header-footer.css';
+import './allPages.css';
 
 const Layout = ({ children }) => (
   <div className="layout-container">

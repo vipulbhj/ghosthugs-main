@@ -1,0 +1,135 @@
+.home-page {
+    display: grid;
+    grid-template-rows: 250px 600px 300px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+                    "ms ms ms ms"
+                    "info info info info"
+                    "ss ss . ."
+}
+
+.home-main-slider {
+    grid-area: ms;
+    text-align: center;
+    padding-top: 50px;  
+}
+
+.home-main-slider h2 {
+    font-size: 3em;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+}
+
+.home-main-slider small {
+    font-size: 1.5em;
+    color: #45a29e;
+    text-transform: capitalize;
+}
+
+.home-info {
+    grid-area: info;
+    padding: 5px;
+    width: 100%;
+}
+
+.home-info h3 {
+    font-size: 2em;
+    color: #c5c6c7;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.slider {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    max-width: 100%;
+    overflow-x: auto;
+    border-radius: 3px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #66fcf1;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    flex-shrink: 0;
+    width: 85%;
+    height: 400px;
+    border-radius: 10px;
+    background: #424b57;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides > div:target {
+    transform: scale(0.8);
+}
+
+.imageSpace {
+    width: 80%;
+    height: 60%;
+}
+
+.card p {
+    line-height: 1.5;
+    font-size: 2em;
+}
+
+.card small {
+    font-size: 1.5em;
+}
+
+
+.home-meta-info {
+    background-color: green;
+    grid-area: minfo;
+}
+.home-second-slider { 
+    background-color: blue;
+    grid-area: ss;
+}
+
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .home-main-slider h2 {
+        font-size: 4em;
+    }
+
+    .home-main-slider small {
+        font-size: 2em;
+    }
+
+}
