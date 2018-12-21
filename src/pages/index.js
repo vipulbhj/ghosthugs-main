@@ -14,7 +14,7 @@ import cover from '../images/cover.jpg';
 
 const IndexPage = () => {
   const workAreas = [
-    'Business Intelligence', 
+    'BI', 
     'Data Analytics', 
     'CI/CD', 
     'DevOps',
@@ -23,9 +23,8 @@ const IndexPage = () => {
     'AWS', 
     'React JS', 
     'Node JS',
-    'react native',
     'web dev',
-    'performance optimization'
+    'react native',
   ]; 
   return (
   <>
