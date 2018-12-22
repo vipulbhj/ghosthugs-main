@@ -16,7 +16,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <>
+    <>
     <div className="Navbar">
       <div className="Navbar-brand">
         ghosthugs
@@ -27,8 +27,23 @@ class Header extends React.Component {
     </div>
     {
       this.state.showMenu ?
-      <div className="Menu">
-        <div className="Menu-naviagtion">
+        <div className="Menu-naviagtion open">
+          <button onClick={this.toggleMenu}>&times;</button>
+          <div className="Menu-items">
+          <div className="Menu-link">
+            <Link to="/">Home</Link>
+            <hr />
+          </div>
+          <div className="Menu-link">
+            <Link to="/projects">Projects</Link>
+            <hr />
+          </div>
+          <div className="Menu-link">
+            <Link to="/about">About</Link>
+            <hr />
+          </div>
+        </div>
+      </div> : <div className="Menu-naviagtion">
           <button onClick={this.toggleMenu}>&times;</button>
           <div className="Menu-items">
           <div className="Menu-link">
@@ -40,8 +55,8 @@ class Header extends React.Component {
           <div className="Menu-link">
             <Link to="/about">About</Link>
           </div>
-        </div></div>
-      </div> : ''
+        </div>
+      </div> 
     }
     </>
   )}

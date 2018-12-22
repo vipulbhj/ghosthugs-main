@@ -27,25 +27,24 @@
     cursor: pointer;
 } 
 
-.Menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    background: transparent;
-    z-index: 1;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: transparent; 
-}
-
 .Menu-naviagtion {
-    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
     margin: 0px 0px 0px auto;
     padding: 5px 20px;
     background-color: #1f2833;
     border-radius: 4px;
-    height: 98.5%;
+    height: 100%;
+    transition: all 400ms ease-in;
+    transform: translateX(100%);
+}
+
+.Menu-naviagtion.open {
+    transform: translateX(0);
 }
 
 .Menu-naviagtion button {
@@ -70,15 +69,13 @@
 }
 
 .Menu-naviagtion .Menu-items .Menu-link {
-    font-size: 1.7em;
-    line-height: 2;
+    line-height: 2; 
 }
 
 .Menu-naviagtion .Menu-items .Menu-link a {
     text-decoration: none;
     color: #45a29e;
-    font-family: Tahoma;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .footer {
@@ -94,4 +91,27 @@
     letter-spacing: 2px;
     word-spacing: 1.5px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .Menu-naviagtion {
+        width: 20%;
+    }
+    
+    .Menu-naviagtion .Menu-items .Menu-link {
+        font-size: 1.7em;
+        line-height: 2;
+    }
+    
+    .Menu-naviagtion .Menu-items .Menu-link a {
+        text-decoration: none;
+        color: #45a29e;
+        font-family: Tahoma;
+        font-size: 1.5em;
+    }
 }
