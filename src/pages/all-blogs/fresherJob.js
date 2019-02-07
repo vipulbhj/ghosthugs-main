@@ -29,7 +29,7 @@ const FresherJobPage = () => (
                         to pay you handsome sums in paycheck. <br />
                         Life is good right, I mean the choice is simple who so ever pays the fattest paycheck
                         you pick them, right ??? <br /> 
-
+                        
                     </p>
                 </div>
             </div>

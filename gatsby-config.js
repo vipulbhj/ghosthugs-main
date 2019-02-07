@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Ghosthugs.com - A place where all the fun lies',
+        name: 'Ghosthugs.com',
         short_name: 'GhostHugs',
         start_url: '/',
         background_color: '#141b23',
         theme_color: '#141b23',
         display: 'standalone',
-        icon: 'src/images/logo.png', // This path is relative to the root of the site.
+        icon: 'src/images/logo.png',
       },
     },
     'gatsby-plugin-offline',
