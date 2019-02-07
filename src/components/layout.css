@@ -19,8 +19,9 @@ button:focus {
   outline: 0;
 }
 
-body {
+html, body {
   width: 100%;
+  background-color: #0b0c10;
 }
 
 .layout-container {
