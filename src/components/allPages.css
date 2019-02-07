@@ -162,7 +162,57 @@
     font-family: sans-serif;
 }
 
+ul {
+    list-style: none;
+}
 
+.blogs-list-li {
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-top: 1px solid ghostwhite;
+    border-bottom: 1px solid ghostwhite;
+    margin: 20px 0px;
+    color: #45a29e;
+    background-color: white;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 1.3em;
+    word-wrap: none;
+}
+
+.blogs-list-li a{
+    text-decoration: none;
+    color: #45a29e;
+}
+
+.blogs-list-li a:hover{
+    text-decoration: none;
+    color: tomato;
+}
+
+.blog-main-container {
+    width: 96%;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.blog-main-heading {
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-size: 20px;
+    word-wrap: none;
+}
+
+.blog-main-content {
+    font-weight: 200;
+    width: 100%;
+    font-size: 18px;
+    color: #ccc;
+    padding: 20px 5px;
+}
 
 @media only screen and (min-width: 600px) {
 /* For tablets: */

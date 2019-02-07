@@ -35,9 +35,13 @@ class Header extends React.Component {
             <hr />
           </div>
           <div className="Menu-link">
-            <Link to="/projects">Projects</Link>
+            <Link to="/blogs">Blogs</Link>
             <hr />
           </div>
+          {/* <div className="Menu-link">
+            <Link to="/projects">Projects</Link>
+            <hr />
+          </div> */}
           <div className="Menu-link">
             <Link to="/about">About</Link>
             <hr />

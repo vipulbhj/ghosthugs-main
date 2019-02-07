@@ -43,7 +43,6 @@ const IndexPage = () => {
               <CARD src={azure} title="IaaS and Automation" des="DevOps powered by Microsoft Azure" />
               <CARD src={app} title="App Development" des="Cross Platform or PWA, whatever suits your business better we have it" />
               <CARD src={analytics} title="Business Analytics" des="Understand your audience better with data extracted facts" />
-              
             </div>
           </div>
         </section>
@@ -59,7 +58,7 @@ const IndexPage = () => {
           backgroundImage: `url('${cover}')`
         }}>
           <article>
-            <p>perfection is achieved not when there is nothing to add but when there is nothing to take away</p>
+            <p>perfection is achieved not when there is nothing to add but when there is nothing to take away.</p>
           </article>
         </div>
       </div>
