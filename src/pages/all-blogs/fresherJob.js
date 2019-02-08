@@ -3,6 +3,8 @@ import React from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 
+import GoogleAds from '../../components/GoogleAds';
+
 
 const FresherJobPage = () => (
     <>
@@ -20,6 +22,9 @@ const FresherJobPage = () => (
                         Now its all gone be great .... 
                         <br /> or may be not ?? <br /><br />
                     </p>
+                    <br />
+                    <GoogleAds client="ca-pub-9880280576668004" slot="slot1234" />
+                    <br />
                     <h3> Let's take a bit more about it.</h3>
                     <p>
                         When you sign up for college, you choose a sepcific domain of study. Then over a period
