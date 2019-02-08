@@ -2,6 +2,6 @@ import * as React from "react";
 
 export default ({client, format = 'auto'}) => (
   <div>
-    <ins className="adsbygoogle" data-ad-client={client} data-ad-format={format} enable_page_level_ads={true}></ins>
+    <ins className="adsbygoogle" data-ad-client={client} data-ad-format={format}></ins>
   </div>
 )

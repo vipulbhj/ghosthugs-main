@@ -14,7 +14,12 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <script dangerouslySetInnerHTML={{__html: '(window.adsbygoogle = window.adsbygoogle || []).push({});'}}></script>
+          <script dangerouslySetInnerHTML={{__html: `(window.adsbygoogle = window.adsbygoogle || []).push(
+            {
+              google_ad_client: "ca-pub-9880280576668004",
+              enable_page_level_ads: true
+            });`
+            }}></script>
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
