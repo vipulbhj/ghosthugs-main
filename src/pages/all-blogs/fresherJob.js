@@ -23,7 +23,7 @@ const FresherJobPage = () => (
                         <br /> or may be not ?? <br /><br />
                     </p>
                     <br />
-                    <GoogleAds client="ca-pub-9880280576668004" slot="1234567890" />
+                    <GoogleAds client="ca-pub-9880280576668004" />
                     <br />
                     <h3> Let's take a bit more about it.</h3>
                     <p>
