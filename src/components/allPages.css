@@ -214,6 +214,47 @@ ul {
     padding: 20px 5px;
 }
 
+.blog-main-content a {
+    color: #45a29e;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.blog-main-content p {
+    margin: 20px 0px;
+}
+
+.blog-main-content strong {
+    color: white;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.blog-banner-image {
+    max-width: 100%;
+    display: block;
+    margin: 20px 0px;
+}
+
+.blog-banner-image > img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px auto;
+}
+
+
+.blog-banner-image > p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: wheat;
+    text-transform: uppercase;
+
+}
+
+
 @media only screen and (min-width: 600px) {
 /* For tablets: */
 }

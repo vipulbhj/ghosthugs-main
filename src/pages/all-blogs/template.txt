@@ -1,0 +1,24 @@
+import React from 'react';
+
+import Layout from '../../components/layout';
+import SEO from '../../components/seo';
+
+// import GoogleAds from '../../components/GoogleAds';
+
+
+const <className> = () => (
+    <>
+        <SEO title="<title>" keywords={['ghosthugs', '<name>', 'IT', <more keywords>]} /> 
+        <Layout>
+            <div className="blog-main-container">
+                <div className="blog-main-heading">
+                    <Blog Title>
+                </div>
+                <div className="blog-main-content">
+                </div>
+            </div>
+        </Layout>
+    </>    
+)
+
+export default <className>;

@@ -15,6 +15,11 @@ const BlogsPage = () => (
                     </Link>
                 </li>
                 <li className="blogs-list-li">
+                    <Link to="/all-blogs/open-source-contribution">
+                        A Progressive Guide To Open Source Contribution
+                    </Link>
+                </li>
+                <li className="blogs-list-li">
                     <Link to="/all-blogs/fresherJob">
                         new blog coming soon...
                     </Link>

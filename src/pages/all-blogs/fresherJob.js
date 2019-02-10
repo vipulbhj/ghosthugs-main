@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 
-import GoogleAds from '../../components/GoogleAds';
+// import GoogleAds from '../../components/GoogleAds';
 
 
 const FresherJobPage = () => (
@@ -23,7 +23,7 @@ const FresherJobPage = () => (
                         <br /> or may be not ?? <br /><br />
                     </p>
                     <br />
-                    <GoogleAds client="ca-pub-9880280576668004" />
+                    {/* <GoogleAds client="ca-pub-9880280576668004" /> */}
                     <br />
                     <h3> Let's take a bit more about it.</h3>
                     <p>
