@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import CustomAnalytic from '../components/CustomAnalytic';
 
 const AboutPage = () => (
   <>
@@ -12,4 +13,6 @@ const AboutPage = () => (
   </>
 )
 
-export default AboutPage;
+export default () => <CustomAnalytic render={() => <AboutPage />} details={{
+  pageUrl: '/about',
+}} />;

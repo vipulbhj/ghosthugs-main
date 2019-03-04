@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Link } from 'gatsby';
+import CustomAnalytic from '../components/CustomAnalytic';
 
 const BlogsPage = () => (
     <>
@@ -29,4 +30,6 @@ const BlogsPage = () => (
     </>    
 )
 
-export default BlogsPage;
+export default () => <CustomAnalytic render={() => <BlogsPage />} details={{
+    pageUrl: '/blogs',
+  }} />;

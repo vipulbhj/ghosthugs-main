@@ -1,14 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+const ProjectsPage = () => (
+  <div>
+    <h1 style={{color: "white"}}> Hey this is our project page </h1>
+    <p style={{color: "white"}}> this came from a reusable chunk </p>
+  </div>
+);
 
-const AboutPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={['ghosthugs', 'about', 'IT', 'company']} />
-    <h3>Projects</h3>
-    <hr />
-  </Layout>
-)
-
-export default AboutPage;
+export default ProjectsPage;
