@@ -16,7 +16,8 @@ class CustomAnalytic extends Component {
         
         // sending page data to analytics server
         // 'https://cryptic-refuge-46201.herokuapp.com/api/analytic'
-        fetch('http://localhost:3000/api/analytic', {
+        // http://localhost:3000/api/analytic
+        fetch('https://cryptic-refuge-46201.herokuapp.com/api/analytic', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

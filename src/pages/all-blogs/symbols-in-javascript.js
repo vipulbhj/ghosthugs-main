@@ -2,10 +2,12 @@ import React from 'react';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
+import CustomAnalytic from '../../components/CustomAnalytic';
 
 import banner from '../../images/symbolinjs.png';
 
-const SymbolsInJavascript = () => (
+
+const SymbolsInJavascriptBlog = () => (
     <>
         <SEO title="blogs.." keywords={[
             'ghosthugs',
@@ -143,4 +145,8 @@ const SymbolsInJavascript = () => (
     </>
 )
 
-export default SymbolsInJavascript;
+
+
+export default () => <CustomAnalytic render={() => <SymbolsInJavascriptBlog />} details={{
+    pageUrl: '/all-blogs/symbol-in-javascript/',
+}} />;
