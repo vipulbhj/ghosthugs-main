@@ -11,6 +11,11 @@ const BlogsPage = () => (
         <Layout>
             <ul>
                 <li className="blogs-list-li">
+                    <Link to="/all-blogs/symbols-in-javascript/">
+                        Symbols in Javascript and there use cases
+                    </Link>
+                </li>
+                {/* <li className="blogs-list-li">
                     <Link to="/all-blogs/fresherJob">
                         Key things to consider while accepting your first job offer
                     </Link>
@@ -24,7 +29,7 @@ const BlogsPage = () => (
                     <Link to="/all-blogs/fresherJob">
                         new blog coming soon...
                     </Link>
-                </li>
+                </li> */}
             </ul>
         </Layout>
     </>    

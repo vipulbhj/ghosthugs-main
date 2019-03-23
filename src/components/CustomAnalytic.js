@@ -12,10 +12,11 @@ class CustomAnalytic extends Component {
 
     componentWillUnmount() {
         let time = new Date() - this.startTime;
-        // console.log('You spent ',time,' milli seconds on ', this.props.details.pageUrl, ' page');
+        console.log('You spent ',time,' milli seconds on ', this.props.details.pageUrl, ' page');
         
         // sending page data to analytics server
-        fetch('https://cryptic-refuge-46201.herokuapp.com/api/analytic', {
+        // 'https://cryptic-refuge-46201.herokuapp.com/api/analytic'
+        fetch('http://localhost:3000/api/analytic', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
