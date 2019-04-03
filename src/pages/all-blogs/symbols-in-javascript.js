@@ -147,6 +147,6 @@ const SymbolsInJavascriptBlog = () => (
 
 
 
-export default () => <CustomAnalytic render={() => <SymbolsInJavascriptBlog />} details={{
-    pageUrl: '/all-blogs/symbol-in-javascript/',
-}} />;
+export default () => <CustomAnalytic render={() => <SymbolsInJavascriptBlog />} 
+    url="/all-blogs/symbol-in-javascript"
+/>;
