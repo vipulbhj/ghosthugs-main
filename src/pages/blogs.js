@@ -35,6 +35,4 @@ const BlogsPage = () => (
     </>    
 )
 
-export default () => <CustomAnalytic render={() => <BlogsPage />} details={{
-    pageUrl: '/blogs',
-  }} />;
+export default BlogsPage;

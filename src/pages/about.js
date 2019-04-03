@@ -13,6 +13,4 @@ const AboutPage = () => (
   </>
 )
 
-export default () => <CustomAnalytic render={() => <AboutPage />} details={{
-  pageUrl: '/about',
-}} />;
+export default AboutPage;

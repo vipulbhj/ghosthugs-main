@@ -13,7 +13,6 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-a9a1cf2ca01efd362bfa52312712ae94.css" />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

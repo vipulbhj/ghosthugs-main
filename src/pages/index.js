@@ -71,6 +71,4 @@ const IndexPage = () => {
   )
 }
 
-export default () => <CustomAnalytic render={() => <IndexPage />} details={{
-  pageUrl: '/index',
-}} />;
+export default IndexPage;
